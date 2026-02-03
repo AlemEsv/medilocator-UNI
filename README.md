@@ -38,6 +38,7 @@ Aplicación Android para localizar centros médicos cercanos según especialidad
 2. Configurar Google Maps:
    - Obtener API Key de Google Cloud Console
    - Crear archivo `app/src/main/res/values/strings.xml` con:
+
    ```xml
    <string name="google_maps_key">TU_API_KEY_AQUI</string>
    ```
@@ -67,6 +68,7 @@ Variables críticas en `app/build.gradle`:
 - `targetSdk`: Versión objetivo de Android (34 = Android 14)
 
 Firebase Database URL en `MainActivity.kt`:
+
 ```kotlin
 FirebaseDatabase.getInstance("https://mykhospitales-moviles-default-rtdb.firebaseio.com/")
 ```
@@ -84,7 +86,7 @@ FirebaseDatabase.getInstance("https://mykhospitales-moviles-default-rtdb.firebas
 
 ## Estructura
 
-```
+```txt
 app/src/main/java/com/example/mykfirebase1/
 ├── MainActivity.kt                    # Actividad principal con mapa
 ├── ListaEspecialidadesActivity.kt    # Lista de especialidades
